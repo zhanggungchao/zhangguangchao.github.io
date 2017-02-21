@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<script src="jquery-1.12.2.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<ul class="ul">
+    <li value="25">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<div>
+    <span>你好</span>
+</div>
+</body>
+<script>
+    $('.ul>li').css({'color':'red','font-size':'30px'});
+    $('.ul~div').css({'color':'pink'});
+    console.log($('div').html());
+    console.log($('div').text());
+    $('span').text('我不好');
+    console.log($('span').text());
+    $("li:value='25'")
+    /*console.log("123".split(','));
+    var str='我喜欢我可爱的女朋友'+','+'他叫喵喵'+'他时而可爱'+'.....'+'......';*/
+//    function Foo(){
+//        getName = function(){
+//            alert(1);
+//        };
+//        return this;
+//    };
+//    function getName(){
+//        alert(5);
+//
+//    };
+   // Foo.getName();//报错，他不是一个函数
+   // getName();// 5
+    //Foo().getName(); // 1
+     //getName(); // 5
+    //new Foo.getName(); //报错 Foo.getName is not a constructor
+    //new Foo().getName();// 报错 (intermediate value).getName is not a function
+//    var a= 'http:item.taobao.com/item.htm?a=1&b=2&c=&d=xxx&e';
+//    var b = a.split('&');
+//    console.log(b);
+//    function parent(a){
+//        this.name= a.name;
+//        this.age= a.name;
+//        this.play=function(){
+//
+//        }
+//    };
+//    parent.prototype={
+//        eat:function(){
+//            alert("你好");
+//        }
+//    };
+//
+//    function child(b){
+//        parent.call(this);
+//        this.name=a.name;
+//
+//    }
+//    child,prototype=new parent(a);
+//    child.prototype.constructor=child;
+
+//    var A=['a','b','c','d'];
+////    console.log(A.join());
+//    console.log(A.pop(1));
+//    console.log(A);
+//    function foo1(){
+//        var b = 200;
+//        function foo2(){
+//            alert(b);
+//            console.log(b);
+//        }
+//        return foo2;
+//    }
+//    foo1()();
+
+    //阻止冒泡事件
+//    function stopBubble(e){
+//        if(e&& e.stopPropation){
+//            //w3c的stopPropation()方法
+//            e.stopPropation();
+//        }
+//        else{
+//            //ie浏览器
+//            window.event.cancelBubble=true;
+//        }
+//    }
+    //阻止默认事件
+//    function stopDefult(e){
+//        //w3c的preventDefult()方法
+//        if(e&& e.preventDefault){
+//            e.preventDefult();
+//        }else{
+//            //ie
+//            window.event.returnValue=false;
+//        }
+//    }
+
+</script>
+</html>
